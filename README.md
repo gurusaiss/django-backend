@@ -50,12 +50,9 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token
 > ⚠️ Important: Never commit your actual `.env` file to GitHub. It should be listed in `.gitignore`.
 
 ## 💻 How to Run Locally
-
 Make sure Docker is running, then follow these steps:
 
 ### 1️⃣ Clone the Repository
-
-```bash
 git clone https://github.com/gurusaiss/django-backend.git
 cd django-backend
 
@@ -63,23 +60,14 @@ cd django-backend
 Create a file named .env and paste the variables shown above.
 
 3️⃣ Build and Start the Containers
-bash
-Copy
-Edit
 docker-compose up --build
+
 4️⃣ Run Migrations & Create Superuser
-bash
-Copy
-Edit
 docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
+
 5️⃣ Start the Celery Worker (New Terminal)
-bash
-Copy
-Edit
 docker-compose exec celery celery -A backend worker --loglevel=info
+
 6️⃣ Start Telegram Bot
-bash
-Copy
-Edit
 docker-compose exec web python telegram_bot/bot.py
