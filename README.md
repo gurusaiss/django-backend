@@ -9,22 +9,7 @@ This is a fully dockerized Django REST Framework project built for a backend dev
 - ⚙️ Admin panel enabled
 - 🐳 Docker & docker-compose for easy local development
 
----
-
-## 📁 Project Structure
-
-backend_project/
-├── api/ # Main app: views, models, serializers, tasks
-├── backend/ # Django settings, URLs, WSGI, Celery setup
-├── telegram_bot/ # Telegram bot logic
-├── Dockerfile # Docker build file
-├── docker-compose.yml # Orchestration file
-├── requirements.txt # Python dependencies
-├── .env # Environment config (not in GitHub)
-└── README.md
-
-
----
+  
 
 ## ⚙️ Setup Instructions
 
